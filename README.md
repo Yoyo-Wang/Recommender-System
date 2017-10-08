@@ -1,2 +1,2 @@
 # Recommender-System
-Coursera Recommender Systems Projects
+This is a project I have done for Coursera Recommender Systems Projects
