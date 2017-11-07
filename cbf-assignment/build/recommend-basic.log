@@ -1,0 +1,110 @@
+16:47:09.567 INFO [main] org.lenskit.cli.Main: Starting LensKit 3.0-M1 on Java 1.8.0_91 from Oracle Corporation
+16:47:09.607 DEBUG [main] org.lenskit.LenskitInfo: have 5573 active revisions
+16:47:09.613 DEBUG [main] org.lenskit.cli.Main: Built from Git revision c0210fa3281ef8b15b0959bcd5fced43c5fec38a
+16:47:09.613 DEBUG [main] org.lenskit.cli.Main: Using VM 'Java HotSpot(TM) 64-Bit Server VM' version 25.91-b14 from Oracle Corporation
+16:47:09.613 INFO [main] org.lenskit.cli.Main: Have 4 processors and heap limit of 1820 MiB
+16:47:09.626 INFO [main] org.lenskit.cli.util.RecommenderLoader: creating fresh recommender
+16:47:10.161 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/yuw/Documents/Coursera/Recommender%20System/cbf-assignment/etc/basic.groovy
+16:47:10.923 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: loading source ratings with base URI file:/Users/yuw/Documents/Coursera/Recommender%20System/cbf-assignment/data/movielens.yml
+16:47:10.923 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: resolved file URI: file:/Users/yuw/Documents/Coursera/Recommender%20System/cbf-assignment/data/ratings.csv
+16:47:10.933 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source ratings to read from file:/Users/yuw/Documents/Coursera/Recommender%20System/cbf-assignment/data/ratings.csv
+16:47:10.948 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: ratings: using delimiter ,
+16:47:10.948 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: ratings: reading header
+16:47:10.948 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: ratings: reading entities of type EntityType[rating]
+16:47:10.997 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: class org.lenskit.data.ratings.RatingBuilder: using entity builder {}
+16:47:10.997 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: loading source movies with base URI file:/Users/yuw/Documents/Coursera/Recommender%20System/cbf-assignment/data/movielens.yml
+16:47:10.997 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: resolved file URI: file:/Users/yuw/Documents/Coursera/Recommender%20System/cbf-assignment/data/movies.csv
+16:47:10.997 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source movies to read from file:/Users/yuw/Documents/Coursera/Recommender%20System/cbf-assignment/data/movies.csv
+16:47:10.998 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: movies: using delimiter ,
+16:47:10.998 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: movies: reading header
+16:47:10.998 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: movies: reading entities of type EntityType[item]
+16:47:10.998 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: class org.lenskit.data.entities.BasicEntityBuilder: using entity builder {}
+16:47:10.998 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: loading source tags with base URI file:/Users/yuw/Documents/Coursera/Recommender%20System/cbf-assignment/data/movielens.yml
+16:47:10.998 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: resolved file URI: file:/Users/yuw/Documents/Coursera/Recommender%20System/cbf-assignment/data/tags.csv
+16:47:10.998 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source tags to read from file:/Users/yuw/Documents/Coursera/Recommender%20System/cbf-assignment/data/tags.csv
+16:47:10.999 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: tags: using delimiter ,
+16:47:10.999 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: tags: reading header
+16:47:10.999 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: tags: reading entities of type EntityType[item-tag]
+16:47:11.002 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: class org.lenskit.data.entities.BasicEntityBuilder: using entity builder {}
+16:47:11.010 DEBUG [main] org.lenskit.LenskitRecommenderEngineBuilder: building graph from 3 configurations
+16:47:11.090 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: replacing nodes in graph with 14 nodes
+16:47:11.098 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: found 4 shared nodes
+16:47:12.299 INFO [main] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[user] from EntityType[rating] (column TypedName[user: long])
+16:47:12.436 INFO [main] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[item] from EntityType[rating] (column TypedName[item: long])
+16:47:12.500 INFO [main] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[user] from EntityType[item-tag] (column TypedName[user: long])
+16:47:12.545 INFO [main] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[item] from EntityType[item-tag] (column TypedName[item: long])
+16:47:12.580 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 2500 entities with type EntityType[item] and 2 indexes
+16:47:12.623 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 264505 entities with type EntityType[rating] and 2 indexes
+16:47:12.651 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 94875 entities with type EntityType[item-tag] and 2 indexes
+16:47:12.652 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 862 entities with type EntityType[user] and 2 indexes
+16:47:12.665 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: Building TF-IDF model
+16:47:13.365 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: Computed TF vectors for 2500 items
+16:47:13.453 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: final graph has 14 nodes
+16:47:13.459 INFO [main] org.lenskit.cli.util.RecommenderLoader: built recommender in 2.449 s
+16:47:13.476 INFO [main] org.lenskit.cli.commands.Recommend: recommending for 1 users
+16:47:13.501 DEBUG [main] org.lenskit.basic.TopNItemRecommender: computing effective candidates for user 320 from 2500 candidates and 62 excluded items
+16:47:13.506 DEBUG [main] org.lenskit.basic.TopNItemRecommender: Computing 10 recommendations for user 320 from 2438 candidates
+16:47:13.579 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is psychological thriller p is 0.05939623283186306 q is 0.03439332233426739
+16:47:13.580 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is nocturnal p is 0.09567588552571055 q is 0.16639392423815585
+16:47:13.580 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is cinematographer:Dariusz Wolski p is 0.054233084042493426 q is null
+16:47:13.580 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is steampunk p is 0.23302975136293372 q is 0.13689493644324222
+16:47:13.581 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is prostitution p is 0.0428650324371845 q is null
+16:47:13.581 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is Dynamic CGI Action p is 0.040503730059153205 q is 0.06685247745824446
+16:47:13.581 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is William Hurt p is 0.1038287943221172 q is null
+16:47:13.581 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is cult film p is 0.03247618384861757 q is 0.9121750327713158
+16:47:13.581 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is too much explanation p is 0.07218651539113939 q is null
+16:47:13.582 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is unsatisfying p is 0.05733745718317362 q is null
+16:47:13.582 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is Nudity (Topless) p is 0.0277881542935577 q is 0.21153234056107353
+16:47:13.585 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is Post apocalyptic p is 0.21628848797479217 q is null
+16:47:13.586 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is dreamlike p is 0.18139826346923735 q is 0.7544713409490255
+16:47:13.587 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is sci-fi p is 0.2076575886442344 q is 2.106543309828593
+16:47:13.587 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is noir p is 0.05094231590353546 q is 0.07868080211691514
+16:47:13.588 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is Futuristmovies.com p is 0.027939407494273698 q is 0.24939103311638017
+16:47:13.588 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is Jinni Top Pick p is 0.04454717462389729 q is null
+16:47:13.592 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is Netflix Finland p is 0.02898805548674187 q is 0.09874963568923342
+16:47:13.601 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is fantasy p is 0.058850799706855306 q is 1.6455279670418548
+16:47:13.629 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is aliens p is 0.21614276322654435 q is 0.7088107228044833
+16:47:13.630 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is claustrophobic p is 0.040503730059153205 q is null
+16:47:13.631 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is philosophy p is 0.04144280148321711 q is 0.8324011286635241
+16:47:13.632 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is To See p is 0.028408639386992666 q is 0.08745695157129504
+16:47:13.632 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is creative p is 0.054233084042493426 q is 0.02710062006270314
+16:47:13.632 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is visually appealing p is 0.15134496827359817 q is 0.1497654430311431
+16:47:13.632 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is Rufus Sewell p is 0.05939623283186306 q is null
+16:47:13.633 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is post apocalyptic p is 0.05733745718317362 q is 0.2292151619133708
+16:47:13.633 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is 3 p is 0.03838562148180229 q is 0.09270649349458841
+16:47:13.633 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is nudity (topless) p is 0.02197347097902019 q is 0.08946692412726022
+16:47:13.633 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is cerebral p is 0.04366782016306838 q is 0.13958335241173336
+16:47:13.634 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is Alex Proyas p is 0.06205045627609899 q is null
+16:47:13.634 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is noirish p is 0.05733745718317362 q is 0.039646677239038856
+16:47:13.634 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is memory p is 0.13506125639101688 q is 0.8041920734953434
+16:47:13.635 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is Kiefer Sutherland p is 0.1557431914831758 q is null
+16:47:13.635 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is plot holes p is 0.04502041879700562 q is 0.07892590522175214
+16:47:13.635 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is telekinesis p is 0.05733745718317362 q is null
+16:47:13.636 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is inconsistencies p is 0.06205045627609899 q is null
+16:47:13.636 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is eerie p is 0.04212653931720452 q is 0.055487254173447215
+16:47:13.637 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is R p is 0.0235839990524163 q is 0.2556003382485974
+16:47:13.637 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is somber p is 0.085730064874369 q is 0.14390753857958888
+16:47:13.638 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is stylized p is 0.21222460655453915 q is 1.342736234325162
+16:47:13.638 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is atmospheric p is 0.19420045115053203 q is 2.081605450496792
+16:47:13.638 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is thought-provoking p is 0.2728687102361203 q is 1.6320445934340801
+16:47:13.639 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is dark p is 0.131955538219558 q is 0.6271938506185492
+16:47:13.639 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is seen at the cinema p is 0.025022096284773507 q is 0.34414704319913847
+16:47:13.639 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is surreal p is 0.35974968398465346 q is 1.2332828222721717
+16:47:13.642 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is stopping time p is 0.07218651539113939 q is null
+16:47:13.642 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is original p is 0.12977309278487528 q is 0.21065792831549737
+16:47:13.642 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is Jennifer Connelly p is 0.05094231590353546 q is null
+16:47:13.642 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is Jennifer Connelly is a fox p is 0.05939623283186306 q is null
+16:47:13.643 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is weird p is 0.04212653931720452 q is 0.2693255368267181
+16:47:13.643 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is film noir p is 0.04502041879700562 q is 0.031129912292919816
+16:47:13.644 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is DVD-Video p is 0.017727411830321088 q is 0.4674597543630036
+16:47:13.644 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is amnesia p is 0.28320838840879936 q is 0.16874184168279593
+16:47:13.644 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is dystopia p is 0.36287773010378443 q is 1.0283675473121536
+16:47:13.644 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is dark fantasy p is 0.20376926361414183 q is null
+16:47:13.644 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is hallucinatory p is 0.12977309278487528 q is 0.2502775742217675
+16:47:13.645 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is bad acting p is 0.03706533895309283 q is null
+16:47:13.645 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is mindfuck p is 0.04248839897520786 q is 0.3563631837620973
+16:47:13.645 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is Jennifer Connoly:Topless p is 0.07218651539113939 q is null
+16:47:13.645 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: tag is creepy p is 0.03912411460178227 q is 0.06820349272332658
+16:47:13.646 INFO [main] org.lenskit.mooc.cbf.TFIDFModelProvider: item is 1748 and cosine score is 0.3066643259686448
+16:47:13.727 INFO [main] org.lenskit.cli.commands.Recommend: recommended for 1 users in 250.1 ms
+16:47:13.728 INFO [main] org.lenskit.cli.Main: If you use LensKit in published research, please see http://lenskit.org/research/
